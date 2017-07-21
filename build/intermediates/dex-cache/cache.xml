@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/wonliao/AI/Live2D_Android_Sample-master/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9ab1f68ccea06ddedaa74b9f43b48c2d7215554d">
+        <dex dex="/Users/wonliao/AI/Live2D_Android_Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b7bf60272025b7133495c9647f2cc774ad29017f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/wonliao/AI/Live2D_Android_Sample-master/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/wonliao/AI/Live2D_Android_Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_03362f315e1fb5dede72560adedf2c4f78d1784a/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wonliao/AI/Live2D_Android_Sample-master/speechsdk/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b5634eba156eacf744054f990104cf8df07d6d9e">
+        <dex dex="/Users/wonliao/AI/Live2D_Android_Sample-master/app/build/intermediates/pre-dexed/debug/classes_7e4c82d006f50a5dcf4a7e622d6f0eff2f76b474.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wonliao/AI/Live2D_Android_Sample-master/app/libs/live2d_android.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c67cd3438063044d8fc8505bf11a0bd8182667f6">
+        <dex dex="/Users/wonliao/AI/Live2D_Android_Sample-master/app/build/intermediates/pre-dexed/debug/live2d_android_4456ea9b62e4141b8b24d532d9e3f66086401fae.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/wonliao/AI/Live2D_Android_Sample-master/app/libs/live2d_android.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c67cd3438063044d8fc8505bf11a0bd8182667f6">
+        <dex dex="/Users/wonliao/AI/Live2D_Android_Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/2/live2d_android_4456ea9b62e4141b8b24d532d9e3f66086401fae/classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.studio.rai.live2d2.MainActivity">
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/main_glSurface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/closeBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/callCalWebView"
+        android:layout_alignParentRight="true"
+        android:background="@android:drawable/ic_delete"
+        android:paddingRight="10dp"
+        android:visibility="invisible" />
+
+    <WebView
+        android:id="@+id/callCalWebView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_above="@+id/line2"
+        android:layout_margin="10dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/chestBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/line2"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/questionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="請輸入你的問題"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/questionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_bright"
+            android:text="送出" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/main_btn_motion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="motions"
+            android:text="motions" />
+
+        <Button
+            android:id="@+id/main_btn_lib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/main_btn_motion"
+            android:layout_weight="1"
+            android:onClick="test"
+            android:text="對嘴" />
+
+        <EditText
+            android:id="@+id/main_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/main_btn_lib"
+            android:layout_weight="1"
+            android:background="#fff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/line3"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tts_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#55000000"
+            android:padding="20dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:elevation="9dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/qna_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/main_btn_lib"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/main_btn_lib"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:text="QnA Maker" />
+
+        <Button
+            android:id="@+id/luis_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/qna_btn"
+            android:layout_alignBottom="@+id/qna_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:background="#ff009688"
+            android:letterSpacing=".3"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="LUIS" />
+
+        <Button
+            android:id="@+id/tuling_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/luis_btn"
+            android:layout_alignEnd="@+id/main_et"
+            android:layout_alignRight="@+id/main_et"
+            android:layout_alignTop="@+id/luis_btn"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark"
+            android:text="圖靈機器人" />
+
+    </LinearLayout>
+
+</RelativeLayout>
